@@ -7,6 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+    <link rel="manifest" href="img/site.webmanifest" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
@@ -231,12 +235,18 @@
             <h2>Siga-me</h2>
             <ul class="icons">
               <li>
-                <a href="https://www.linkedin.com/in/marco-antonio-carneiro-6932aa57/" target="_blank" class="icon brands style2 fa-linkedin"
+                <a
+                  href="https://www.linkedin.com/in/marco-antonio-carneiro-6932aa57/"
+                  target="_blank"
+                  class="icon brands style2 fa-linkedin"
                   ><span class="label">Linkedin</span></a
                 >
               </li>
               <li>
-                <a href="https://github.com/marcocarneiro" target="_blank" class="icon brands style2 fa-github"
+                <a
+                  href="https://github.com/marcocarneiro"
+                  target="_blank"
+                  class="icon brands style2 fa-github"
                   ><span class="label">GitHub</span></a
                 >
               </li>
@@ -259,9 +269,12 @@
       document.getElementById("anoAtual").textContent =
         new Date().getFullYear();
 
-      document.getElementById("whatsapp-icon").addEventListener("click", function () {
-          const numero = "5512981201628"; 
-          const mensagem = "Olá, entro em contato pelo site marco-carneiro.com.br gostaria de mais informações!";
+      document
+        .getElementById("whatsapp-icon")
+        .addEventListener("click", function () {
+          const numero = "5512981201628";
+          const mensagem =
+            "Olá, entro em contato pelo site marco-carneiro.com.br gostaria de mais informações!";
           const url = `https://wa.me/${numero}?text=${encodeURIComponent(
             mensagem
           )}`;
